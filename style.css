@@ -1,0 +1,42 @@
+:root {
+  --cell-width: -64px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 64px;
+  height: 64px;
+}
+
+.wall {
+  /* background-color: orange; */
+  background: url("./assets/pokemon.png") calc(var(--cell-width) * 18) calc(var(--cell-width) * 0);
+}
+
+.grass {
+  background: url("./assets/pokemon.png") calc(var(--cell-width) * 1) 0px;
+}
+
+.finish {
+  /* background: url("./assets/link.png") 102px 0px; */
+  background-color: green;
+}
+
+.player {
+  position: relative;
+  /* background-color: blue; */
+  background: url("./assets/link.png") 0px 0px;
+  width: 64px;
+  height: 64px;
+  z-index: 10;
+}
